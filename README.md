@@ -20,7 +20,6 @@ A Backrooms simulator.
 	- [ ] Level 9
 	- [ ] Level 10
 	- [ ] Level 11
-	- [ ] Level 867
 	- [X] The Hub
 	- [ ] The Void
 - Entities
@@ -32,7 +31,6 @@ A Backrooms simulator.
 		- [ ] Female
 		- [ ] Baby
 	- [ ] Skin stealer
-		- [ ] Voice cloning TTS, STT, Chatbot
 - Items
 	- [ ] Almond water
 	- [X] Level keys

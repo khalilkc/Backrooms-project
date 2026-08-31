@@ -6,3 +6,6 @@ __pycache__/
 .vscode/
 export_presets.cfg
 Locales/*.translation
+
+# Local dev notes (never pushed)
+CHANGES.md
