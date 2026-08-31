@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://cr0taqx4d6l1m"]
 
 [ext_resource type="Script" uid="uid://bb6ahd78hh4w6" path="res://Scripts/Character/CharacterMovement.gd" id="1_x3d5u"]
-[ext_resource type="Script" uid="uid://bswvs12wslo7j" path="res://Scripts/I4.0/Conn.gd" id="2_shmu5"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yg3f5"]
 radius = 0.3774414
@@ -12,9 +11,6 @@ script = ExtResource("1_x3d5u")
 Head = NodePath("Head")
 
 [node name="Scripts" type="Node" parent="." unique_id=1109398633]
-
-[node name="I4Conn" type="Node" parent="Scripts" unique_id=2102811963]
-script = ExtResource("2_shmu5")
 
 [node name="Head" type="Node3D" parent="." unique_id=1256130155]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -0.011362694, 1.9078857, 0.0068263113)

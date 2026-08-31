@@ -28,13 +28,6 @@ var Sensibility: float = 1.5
 var GenerationTime: float = 2
 
 # ====================
-#         I4.0
-# ====================
-
-var I4_Servers: Array[String] = ["main.tao71.org:8060", "main.tao71.org:8061", "alt1.tao71.org:8060"]
-var I4_Chatbots: Array[String] = ["chatbot-lastest-best", "chatbot-latest-decent", "chatbot-latest-cheap", "chatbot-latest-free"]
-
-# ====================
 #       SOUND ID
 # ====================
 
@@ -62,7 +55,7 @@ static func CreateSoundPlayers(Self: bool, Parent: Node3D) -> Dictionary[String,
 	}
 
 static func GetGameConfigDirPath() -> String:
-	var d = OS.get_data_dir() + "/BackroomsWithI4.0"
+	var d = OS.get_data_dir() + "/Backrooms by Andinest Games"
 	
 	if (!DirAccess.dir_exists_absolute(d)):
 		DirAccess.make_dir_recursive_absolute(d)

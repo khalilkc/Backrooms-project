@@ -1,6 +1,6 @@
-# Backrooms With I4.0
+# Backrooms by Andinest Games
 
-A Backrooms simulator with [I4.0](https://github.com/TAO71-AI/I4.0-NEW) integration.
+A Backrooms simulator.
 
 > [!IMPORTANT]
 > This game is still in development. Expect bugs.
@@ -33,7 +33,6 @@ A Backrooms simulator with [I4.0](https://github.com/TAO71-AI/I4.0-NEW) integrat
 		- [ ] Baby
 	- [ ] Skin stealer
 		- [ ] Voice cloning TTS, STT, Chatbot
-	- [ ] I4.0
 - Items
 	- [ ] Almond water
 	- [X] Level keys
