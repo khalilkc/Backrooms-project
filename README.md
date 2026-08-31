@@ -6,7 +6,7 @@
 <summary>🌐 English</summary>
 
 <p align="center">
-  <img src="icon.svg" alt="Backrooms by Andinest Games" width="140">
+  <img src="icon.png" alt="Backrooms by Andinest Games" width="140">
 </p>
 
 <h1 align="center">🟡 BACKROOMS BY ANDINEST GAMES 🟡</h1>
@@ -113,10 +113,10 @@ Distributed under the **MIT License**. See [`LICENSE.md`](LICENSE.md) for detail
 <summary>🌍 العربية</summary>
 
 <div dir="rtl" align="center">
-  <img src="icon.svg" alt="Backrooms by Andinest Games" width="140">
+  <img src="icon.png" alt="Backrooms by Andinest Games" width="140">
 </div>
 
-<h1 dir="rtl" align="center">🟡 باك رومز بواسطة أندينيست جيمز 🟡</h1>
+<h1 dir="rtl" align="center">🟡 باك رومز بواسطة ANDINEST GAMES 🟡</h1>
 
 <p dir="rtl" align="center">
   <i>انعدام الواقع يتحقق — تجربة رعب في عالم الباك رومز.</i>

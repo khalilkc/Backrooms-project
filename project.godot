@@ -15,7 +15,7 @@ config/version="0.2.0"
 run/main_scene="uid://upk3pgwp2pnb"
 config/features=PackedStringArray("4.7", "Forward Plus")
 boot_splash/show_image=false
-config/icon="uid://cyemyoma11115"
+config/icon="uid://bgury5arowjou"
 
 [autoload]
 
