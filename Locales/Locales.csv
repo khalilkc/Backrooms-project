@@ -1,0 +1,36 @@
+REF_TXT,en,es,it,fr,ja
+BTN_PLAY,Play,Jugar,,,
+BTN_OPTIONS,Options,Opciones,,,
+BTN_CREDITS,Credits,Créditos,,,
+BTN_EXIT,Exit,Salir,,,
+TAB_GRAPHICS,Graphics,Gráficos,,,
+LBL_VIEW_DISTANCE,View Distance,Distancia de visión,,,
+TT_LBL_VIEW_DISTANCE,"Radius where the chunks will render.
+
+Big values will require more CPU, GPU, RAM, and will take longer to load the level.
+
+Performance impact: High",-,,,
+TAB_SOUND,Sound,Sonido,,,
+LBL_SOUND_NOCONFIG,No sound configuration yet.,No hay configuración de sonido aún.,,,
+TAB_CONTROLS,Controls,Controles,,,
+LBL_MOUSESENS,Mouse sensibility,Sensibilidad del ratón,,,
+TT_LBL_MOUSESENS,"This affect how fast the camera moves.
+
+Performance impact: None",-,,,
+TAB_GAME,Game,Juego,,,
+LBL_MAP_UPDATE,Map update time,Tiempo de actualización del mapa,,,
+TT_LBL_MAP_UPDATE,"This affects how much the map will update.
+Smaller values will require more CPU, but might reduce frame drops.
+
+Performance impact: Low",-,,,
+TAB_I40,I4_0,I4_0,,,
+LBL_I4.0_NOCONFIG,No I4.0 configuration yet.,No hay configuración de I4.0 aún.,,,
+TT_BTN_PLAY,"NOTE:
+This game is still in development. Since most levels doesn't have any exits yet, this will take you to The Hub (level selector).","NOTA:
+Este juego sigue en desarrollo. Ya que la mayoría de niveles no tienen ninguna salida todavía, estas te llevarán a The Hub (el selector de niveles).",,,
+BTN_SAVE_CONFIG,Save,Guardar,,,
+LBL_SHADOW_DISTANCE,Shadow view distance,Distancia de visión de las sombras,,,
+LBL_VOL_MASTER,Master volume,Volumen global,,,
+LBL_VOL_ENTITY,Entity volume,Volumen de entidades,,,
+LBL_VOL_MUSIC,Music and ambience volume,Volumen de música y ambiente,,,
+LBL_VOL_SFX,Sound effects volume,Volumen de efectos de sonido,,,

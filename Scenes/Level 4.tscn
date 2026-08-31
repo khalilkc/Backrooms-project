@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://cyphh6vjjn2b0"]
+
+[ext_resource type="Texture2D" uid="uid://bcesfthocey35" path="res://Textures/HDRIs/overcast_soil_puresky_4k.exr" id="1_gi3jd"]
+[ext_resource type="Script" uid="uid://b4o0ne3il63m4" path="res://Scripts/WorldGen/WorldGen.gd" id="1_psx24"]
+[ext_resource type="PackedScene" uid="uid://cb6dcbs5lm0w6" path="res://Chunks/L4T1Chunk.tscn" id="2_xramr"]
+[ext_resource type="PackedScene" uid="uid://cr0taqx4d6l1m" path="res://Prefabs/Player.tscn" id="3_02u5l"]
+[ext_resource type="PackedScene" uid="uid://3sdmy3x0nly7" path="res://Chunks/L4T2Chunk.tscn" id="3_yg3f5"]
+[ext_resource type="PackedScene" uid="uid://vvlanawg1eup" path="res://Chunks/L4T3Chunk.tscn" id="4_853rs"]
+[ext_resource type="Texture2D" uid="uid://b4ne2k6bhkygq" path="res://Textures/NoiseMaps/NoiseMapL4V1.png" id="4_bfc4r"]
+[ext_resource type="PackedScene" path="res://Scenes/PauseMenu.tscn" id="5_pm"]
+[ext_resource type="Shader" uid="uid://0tm6e718op7j" path="res://Scripts/PostFX/GIFake.gdshader" id="6_fx"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_edpdx"]
+panorama = ExtResource("1_gi3jd")
+energy_multiplier = 0.5
+
+[sub_resource type="Sky" id="Sky_x75jp"]
+sky_material = SubResource("PanoramaSkyMaterial_edpdx")
+
+[sub_resource type="Environment" id="Environment_yk364"]
+background_mode = 2
+sky = SubResource("Sky_x75jp")
+ambient_light_color = Color(0.72464263, 0.7246426, 0.7246426, 1)
+ambient_light_energy = 1.4
+tonemap_mode = 3
+ssr_max_steps = 48
+ssr_fade_out = 1.5
+ssao_radius = 1.2
+ssao_intensity = 2.2
+ssao_power = 2.0
+ssao_detail = 0.6
+ssil_radius = 6.0
+ssil_intensity = 1.1
+ssil_normal_rejection = 0.8
+sdfgi_use_occlusion = true
+sdfgi_bounce_feedback = 0.55
+sdfgi_energy = 1.05
+glow_enabled = true
+glow_levels/1 = 3.52
+glow_levels/2 = 4.49
+glow_levels/3 = 5.32
+glow_levels/4 = 4.32
+glow_levels/5 = 1.76
+glow_normalized = true
+glow_intensity = 1.5
+glow_bloom = 0.1
+glow_blend_mode = 2
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0.561602, 0.59632444, 0.6503354, 1)
+fog_density = 0.5358
+fog_sky_affect = 0.433
+fog_depth_curve = 1.8660655
+fog_depth_begin = 0.0
+fog_depth_end = 30.0
+volumetric_fog_enabled = true
+volumetric_fog_albedo = Color(0.55, 0.58, 0.64, 1)
+volumetric_fog_gi_inject = 0.5
+volumetric_fog_anisotropy = 0.5
+volumetric_fog_length = 150.0
+volumetric_fog_ambient_inject = 0.5
+volumetric_fog_sky_affect = 0.0
+adjustment_brightness = 1.02
+adjustment_contrast = 1.04
+adjustment_saturation = 1.1
+
+[sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_1a2o4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fx"]
+shader = ExtResource("6_fx")
+shader_parameter/ambient_tint = Color(0.6, 0.66, 0.8, 1)
+shader_parameter/ambient_strength = 0.22
+shader_parameter/dark_cutoff = 0.3
+shader_parameter/vignette_strength = 0.08
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wp5od"]
+size = Vector3(1.3791504, 0.5020752, 1.5950928)
+
+[node name="Level 4" type="Node3D" unique_id=291746162]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2031605785]
+environment = SubResource("Environment_yk364")
+camera_attributes = SubResource("CameraAttributesPhysical_1a2o4")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2142870487]
+transform = Transform3D(0.93301266, 0.23478948, 0.27269265, -0.3535535, 0.739199, 0.5732234, -0.066987306, -0.631236, 0.77269256, 0, 6, 0)
+light_energy = 1.4
+light_volumetric_fog_energy = 3.0
+shadow_enabled = true
+shadow_normal_bias = 1.5
+shadow_opacity = 0.65
+directional_shadow_split_1 = 0.06
+directional_shadow_split_2 = 0.15
+directional_shadow_split_3 = 0.4
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 42.0
+
+[node name="World" type="Node3D" parent="." unique_id=167701895 node_paths=PackedStringArray("Player")]
+script = ExtResource("1_psx24")
+ChunkSize = Vector3i(10, 5, 10)
+Chunks = Array[PackedScene]([ExtResource("2_xramr"), ExtResource("3_yg3f5"), ExtResource("4_853rs")])
+LevelName = "Level 4"
+Maps = Array[Texture2D]([ExtResource("4_bfc4r")])
+MultipleFloors = false
+Player = NodePath("../Player")
+PlayerSpawnMin = Vector3i(-150, 1, -150)
+PlayerSpawnMax = Vector3i(150, 1, 150)
+PlayerDieFalling = true
+PlayerDieFallingDistance = 5.0
+
+[node name="Player" parent="." unique_id=632983521 instance=ExtResource("3_02u5l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4254518, 0)
+
+[node name="PauseMenu" parent="." unique_id=1172364952 instance=ExtResource("5_pm")]
+
+[node name="FX_Ambient" type="CanvasLayer" parent="." unique_id=435501312]
+layer = 0
+
+[node name="ColorRect_Ambient" type="ColorRect" parent="FX_Ambient" unique_id=900242958]
+material = SubResource("ShaderMaterial_fx")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1388845117]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1226632207]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.028686523, -0.2489624, 0.10321045)
+shape = SubResource("BoxShape3D_wp5od")

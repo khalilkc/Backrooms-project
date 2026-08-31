@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cg4u7qmh4d0bi"]
+
+[ext_resource type="PackedScene" uid="uid://b1dp1nklctvn4" path="res://Chunks/L0T1Chunk.tscn" id="2_dp2pb"]
+[ext_resource type="Script" uid="uid://b4o0ne3il63m4" path="res://Scripts/WorldGen/WorldGen.gd" id="2_x0cd5"]
+[ext_resource type="PackedScene" uid="uid://cr0taqx4d6l1m" path="res://Prefabs/Player.tscn" id="7_oc5sq"]
+[ext_resource type="PackedScene" path="res://Scenes/PauseMenu.tscn" id="8_pm"]
+
+[sub_resource type="Environment" id="Environment_fjb22"]
+background_mode = 1
+background_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+background_energy_multiplier = 0.0
+tonemap_mode = 1
+ssr_max_steps = 48
+ssr_fade_out = 1.5
+ssao_radius = 0.8
+ssao_intensity = 2.5
+ssao_power = 1.6
+ssil_radius = 1.2
+ssil_intensity = 0.8
+glow_enabled = true
+glow_intensity = 0.5
+glow_bloom = 0.25
+fog_mode = 1
+fog_light_color = Color(0, 0, 0, 1)
+fog_density = 0.0
+fog_depth_end = 40.0
+volumetric_fog_albedo = Color(0.1826649, 0.15801236, 0.062318154, 1)
+volumetric_fog_emission = Color(0.16495377, 0.08769915, 2.4065375e-08, 1)
+volumetric_fog_length = 50.0
+
+[sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_1a2o4"]
+
+[node name="Level 0" type="Node3D" unique_id=291746162]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2031605785]
+environment = SubResource("Environment_fjb22")
+camera_attributes = SubResource("CameraAttributesPhysical_1a2o4")
+
+[node name="World" type="Node3D" parent="." unique_id=167701895 node_paths=PackedStringArray("Player")]
+script = ExtResource("2_x0cd5")
+ChunkSize = Vector3i(10, 5, 10)
+Chunks = Array[PackedScene]([ExtResource("2_dp2pb")])
+LevelName = "Level 0"
+BlackTextureInsteadOfNoise = true
+MultipleFloors = false
+Player = NodePath("../Player")
+PlayerSpawnMin = Vector3i(10, 1, 10)
+PlayerSpawnMax = Vector3i(10, 1, 10)
+PlayerDieFalling = true
+PlayerDieFallingDistance = 5.0
+
+[node name="Player" parent="." unique_id=632983521 instance=ExtResource("7_oc5sq")]
+
+[node name="PauseMenu" parent="." unique_id=240847030 instance=ExtResource("8_pm")]
