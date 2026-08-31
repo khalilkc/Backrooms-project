@@ -5,7 +5,7 @@
 <h1 align="center">🟡 BACKROOMS BY ANDINEST GAMES 🟡</h1>
 
 <p align="center">
-  <i>Unreality made tangible — an atmospheric Backrooms survival experience.</i>
+  <i>Unreality made tangible — a Backrooms survival experience.</i>
 </p>
 
 <p align="center">
@@ -19,61 +19,58 @@
 
 ## 🌌 Overview
 
-Welcome to the **Backrooms** — the liminal labyrinth that lies just beyond the
-fabric of reality. **Backrooms by Andinest Games** is a first-person,
-procedurally-generated horror experience built with **Godot 4.7**. Every hallway
-is infinite. Every light flickers. And somewhere between the walls, you are not
-alone.
+**Backrooms by Andinest Games** is a first-person Backrooms experience built
+with the **Godot 4.7** engine. The world is assembled procedurally around you,
+room by room, hallway by hallway — an endless maze of yellow wallpapered limbo
+and abandoned office dread.
 
 > [!IMPORTANT]
 > The game is still in active development. Expect the occasional bug, flicker,
-> and unexplained draft. That's part of the atmosphere.
+> and unexplained draft.
 
 ---
 
-## 🎮 Gameplay Features
+## 🎮 What's in the Game
 
-### 🏚️ Infinite World Generation
-- Endless Backrooms built **procedurally** around the player, chunk by chunk.
-- Levels assemble themselves as you walk — no loading screens, no boundaries.
-- Deterministic layout keyed to noise maps, so danger always feels just around
-  the corner.
+### 🗺️ Levels
+- **Level 0** — The iconic yellow expanse. Endless wallpapered corridors with a
+  low, constant hum and a damp carpet beneath your feet.
+- **Level 4** — The abandoned office complex: cubicles, pillars, fluorescent
+  lighting, and the feeling that the desks were only just vacated.
+- **The Hub** — The central nexus between realities, a momentary refuge before
+  you descend deeper.
 
-### 🚶 Immersive First-Person Movement
-- Full footstep audio with a **dynamic camera bob** and **landing pitch**.
-- Sprint, crouch, jump with coyote-time and jump-buffering for a tight feel.
-- Head-bob and breath effects tuned for that "found footage" anxiety.
+### 🏚️ Procedural World Generation
+- The levels build themselves **chunk by chunk** around the player as you walk,
+  giving a truly infinite, seamless maze with no loading breaks.
+- A noise-driven layout keeps the experience unpredictable every run.
 
-### 🔦 Atmospheric Lighting & Effects
-- Ray-traced reflections, screen-space ambient occlusion & indirect lighting.
-- Volumetric fog, god rays, and **soft dynamic shadows** for believable depth.
-- Subtle post-processing film-grain vignette and analog glow.
+### 🚶 First-Person Movement
+- Full **footstep audio** with a **dynamic head-bob** and **landing pitch**.
+- **Sprint**, **crouch**, and **jump** with tight coyote-time and
+  jump-buffering.
+- **Whistling** — call out into the dark, if you dare.
 
-### 🗝️ Items & Progress
-- Collect **Level Keys** and unlock the path deeper into the Backrooms.
-- Portable inventory system and doorway level-transitions with a cinematic
-  loading fade.
+### 🔦 Lighting & Atmosphere
+- **Volumetric fog**, god rays, and **soft dynamic shadows** that carve the
+  corridors with believable depth.
+- Reflections, screen-space ambient occlusion, and indirect lighting add weight
+  to every fluorescent fixture.
+- Film-grain and analog glow give the whole game a "found footage" finish.
 
-### 🧍 Entities & Dread
-- Procedural **entity AI** that stalks, follows, and reacts to the player.
-- A lurking presence that tracks you through the maze with unnerving patience.
+### 🗝️ Items & Progression
+- Collect **Level Keys** and carry them in your inventory.
+- Cross thresholds through **doorway transitions** with a cinematic loading
+  fade.
 
-### 🎚️ Cohesive UX
-- Animated **video-background main menu** with a film-grain aesthetic.
-- Loading screen with progress bar, tips, and cinematic scene-switching.
-- Accessible pause menu to catch your breath (you'll need it).
+### 🧍 Entities
+- A **following presence** that silently shadows your every step through the
+  maze.
 
----
-
-## 🗺️ Available Levels
-
-| Level | Status | Description |
-|-------|--------|-------------|
-| **Level 0** | ✅ Playable | The iconic yellow expanse — wallpapered limbo with a low, constant hum. |
-| **Level 4** | ✅ Playable | The abandoned office complex, with cubicles, pillars, and fluorescent dread. |
-| **The Hub** | ✅ Playable | The mysterious central nexus, a safe(?) zone between realities. |
-| **The Void** | 📝 Planned | An endless dark — no light, no floor, no escape. |
-| **The Rest** | 🚧 Roadmap | More levels, entities, and horrors on the way. |
+### 🎚️ Interface
+- An animated **video-background main menu** wrapped in a film-grain aesthetic.
+- A loading screen with progress bar and cinematic scene-switching.
+- A pause menu for the moments you need to breathe.
 
 ---
 
@@ -82,7 +79,8 @@ alone.
 - **Engine:** Godot 4.7 (Forward+)
 - **Platform:** Windows (D3D12)
 - **Physics:** Jolt Physics
-- **Rendering:** Forward+ with real-time reflections, GI, SSAO/SSIL and volumetric fog
+- **Rendering:** Forward+ with real-time reflections, GI, SSAO/SSIL and
+  volumetric fog
 
 ---
 
@@ -90,14 +88,13 @@ alone.
 
 1. Install [Godot 4.7](https://godotengine.org/download).
 2. Open the project by selecting `project.godot` in the Godot Project Manager.
-3. Press the **Play** button — and pray the hum stays far away.
+3. Press the **Play** button — and step through the door.
 
 ---
 
 ## 🙏 Credits
 
 - **Developed by** [Andinest Games](https://github.com/khalilkc)
-- Built with the love of liminal spaces and the Godot engine.
 
 ---
 
