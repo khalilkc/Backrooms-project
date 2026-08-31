@@ -58,15 +58,6 @@ and abandoned office dread.
   to every fluorescent fixture.
 - Film-grain and analog glow give the whole game a "found footage" finish.
 
-### 🗝️ Items & Progression
-- Collect **Level Keys** and carry them in your inventory.
-- Cross thresholds through **doorway transitions** with a cinematic loading
-  fade.
-
-### 🧍 Entities
-- A **following presence** that silently shadows your every step through the
-  maze.
-
 ### 🎚️ Interface
 - An animated **video-background main menu** wrapped in a film-grain aesthetic.
 - A loading screen with progress bar and cinematic scene-switching.
