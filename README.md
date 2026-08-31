@@ -93,6 +93,7 @@ and abandoned office dread.
 ## 🙏 Credits
 
 - **Developed by** [Andinest Games](https://github.com/khalilkc)
+- **Original prototype by** [TAO71-Games](https://github.com/TAO71-Games/BackroomsWithI4.0-Godot)
 
 ---
 
@@ -199,6 +200,7 @@ Distributed under the **MIT License**. See [`LICENSE.md`](LICENSE.md) for detail
 ## 🙏 الاعتمادات
 
 - **طوّره** [أندينيست جيمز](https://github.com/khalilkc)
+- **النموذج الأصلي** [TAO71-Games](https://github.com/TAO71-Games/BackroomsWithI4.0-Godot)
 
 ---
 
