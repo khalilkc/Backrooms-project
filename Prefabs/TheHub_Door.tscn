@@ -3,10 +3,10 @@
 [ext_resource type="Script" uid="uid://dce8t4p5kh1b8" path="res://Scripts/WorldGen/Levels/TheHub_Door.gd" id="1_n44da"]
 [ext_resource type="PackedScene" uid="uid://70orurvc7nd" path="res://Chunks/TheHub_Previews/Lvl4.tscn" id="2_f3gbo"]
 [ext_resource type="PackedScene" uid="uid://dlmjsy70xtmy8" path="res://Chunks/TheHub_Previews/Lvl0.tscn" id="3_f3gbo"]
-[ext_resource type="Texture2D" uid="uid://cq1jmpiobh7sx" path="res://Assets/door_0.png" id="4_8e8se"]
+[ext_resource type="Texture2D" uid="uid://cq1jmpiobh7sx" path="res://Assets/Door/door_0.png" id="4_8e8se"]
 [ext_resource type="FontFile" uid="uid://bajsv1yybayep" path="res://Themes/Fonts/BetterVCR 25.09.ttf" id="4_d5yeu"]
-[ext_resource type="Texture2D" uid="uid://bsk0byjri1cb5" path="res://Assets/door_1.png" id="5_d5yeu"]
-[ext_resource type="Texture2D" uid="uid://benmjl1fclpqu" path="res://Assets/door_2.png" id="6_kdkbj"]
+[ext_resource type="Texture2D" uid="uid://bsk0byjri1cb5" path="res://Assets/Door/door_1.png" id="5_d5yeu"]
+[ext_resource type="Texture2D" uid="uid://benmjl1fclpqu" path="res://Assets/Door/door_2.png" id="6_kdkbj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_84lx4"]
 size = Vector3(1.1, 2.2, 0.15)

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsk0byjri1cb5"
-path.s3tc="res://.godot/imported/door_1.png-d401dbe98cdeac4e50eba0c303b9fdd2.s3tc.ctex"
+uid="uid://cq1jmpiobh7sx"
+path.s3tc="res://.godot/imported/door_0.png-1ce4deac3a20b103011541d6291c7901.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "3eab31d4e17c72541c4295162ea6e712"
+"md5": "9a8af7e74a2a64fd50e4247f1a9128cf"
 }
 
 [deps]
 
-source_file="res://Assets/door_1.png"
-dest_files=["res://.godot/imported/door_1.png-d401dbe98cdeac4e50eba0c303b9fdd2.s3tc.ctex"]
+source_file="res://Assets/Door/door_0.png"
+dest_files=["res://.godot/imported/door_0.png-1ce4deac3a20b103011541d6291c7901.s3tc.ctex"]
 
 [params]
 
@@ -29,8 +29,8 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=8
-roughness/src_normal="res://Assets/door_2.png"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
