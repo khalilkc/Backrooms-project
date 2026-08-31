@@ -9,3 +9,6 @@ Locales/*.translation
 
 # Local dev notes (never pushed)
 CHANGES.md
+
+# Local reference guides (never pushed)
+GIT_GUIDE.md
