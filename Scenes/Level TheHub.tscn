@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b4o0ne3il63m4" path="res://Scripts/WorldGen/WorldGen.gd" id="1_sty34"]
 [ext_resource type="PackedScene" uid="uid://metvq0i54e2q" path="res://Chunks/LHT1Chunk.tscn" id="2_nb3b8"]
 [ext_resource type="PackedScene" uid="uid://cr0taqx4d6l1m" path="res://Prefabs/Player.tscn" id="3_85dbq"]
-[ext_resource type="PackedScene" path="res://Scenes/PauseMenu.tscn" id="4_pm"]
+[ext_resource type="PackedScene" uid="uid://barubh2earwls" path="res://Scenes/PauseMenu.tscn" id="4_pm"]
 
 [sub_resource type="Environment" id="Environment_sty34"]
 background_mode = 1
@@ -14,6 +14,7 @@ glow_bloom = 0.25
 fog_enabled = true
 fog_mode = 1
 fog_light_color = Color(0, 0, 0, 1)
+fog_density = 1.0
 fog_depth_end = 35.0
 volumetric_fog_density = 0.0025
 volumetric_fog_albedo = Color(0.52243817, 0.33598495, 0.07997725, 1)

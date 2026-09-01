@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b1dp1nklctvn4" path="res://Chunks/L0T1Chunk.tscn" id="2_dp2pb"]
 [ext_resource type="Script" uid="uid://b4o0ne3il63m4" path="res://Scripts/WorldGen/WorldGen.gd" id="2_x0cd5"]
 [ext_resource type="PackedScene" uid="uid://cr0taqx4d6l1m" path="res://Prefabs/Player.tscn" id="7_oc5sq"]
-[ext_resource type="PackedScene" path="res://Scenes/PauseMenu.tscn" id="8_pm"]
+[ext_resource type="PackedScene" uid="uid://barubh2earwls" path="res://Scenes/PauseMenu.tscn" id="8_pm"]
 
 [sub_resource type="Environment" id="Environment_fjb22"]
 background_mode = 1
@@ -24,6 +24,7 @@ fog_mode = 1
 fog_light_color = Color(0, 0, 0, 1)
 fog_density = 0.0
 fog_depth_end = 40.0
+volumetric_fog_enabled = true
 volumetric_fog_albedo = Color(0.1826649, 0.15801236, 0.062318154, 1)
 volumetric_fog_emission = Color(0.16495377, 0.08769915, 2.4065375e-08, 1)
 volumetric_fog_length = 50.0
